@@ -1,0 +1,95 @@
+
+body{
+  height: 100%;
+  margin: 0;
+  background-image: url("./../../public/pixel-art.jpg");
+  transition: background-color 0.5s ease-in-out, background-image 0.5s ease-in-out;
+}
+
+.container {
+  background: rgba(251, 230, 241, 0.7);
+text-align: center;
+font-family: "Microsoft Sans Serif", Tahoma, sans-serif;
+padding: 54px;
+box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+width: 80rem; 
+max-width: 100%; 
+height: 15rem;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(46, 6, 50);
+
+}
+
+h1{
+  color: #401c40;
+}
+button {
+  font-family: "Microsoft Sans Serif", Tahoma, sans-serif;
+  background-color: #6A66D9;
+  color: white;
+  border: 2px solid #010326;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #34518f;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #172573;
+  border-color: #1D64F2;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+
+/* Dark Mode Button */
+
+
+body.dark-mode{
+  background-image: url("./../../public/pixel-dark.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; 
+  width: 100vw;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+body.dark-mode .container {
+  background: rgb(0, 0, 0);
+  opacity: 0.9;
+  box-shadow: rgba(70, 130, 255, 0.4) 5px 5px, 
+            rgba(70, 130, 255, 0.3) 10px 10px, 
+            rgba(70, 130, 255, 0.2) 15px 15px, 
+            rgba(70, 130, 255, 0.1) 20px 20px, 
+            rgba(70, 130, 255, 0.05) 25px 25px;
+border: 1px solid rgb(133, 155, 255);
+}
+
+body.dark-mode h1 {
+  color: #fbe6f1ef;
+}
+body.dark-mode p {
+  color: #d2e6faa3 !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
